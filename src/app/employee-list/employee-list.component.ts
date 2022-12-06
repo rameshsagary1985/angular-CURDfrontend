@@ -10,6 +10,8 @@ import { EmployeeService } from '../employee.service';
   styleUrls: ['./employee-list.component.css']
 })
 export class EmployeeListComponent implements OnInit {
+
+
   employees: Observable<Employee[]> | undefined;
 
   constructor(private employeeService: EmployeeService,
@@ -33,9 +35,14 @@ export class EmployeeListComponent implements OnInit {
         (        error: any) => console.log(error));
   }
 
+ 
+
   employeeDetails(id: number){
     this.router.navigate(['details', id]);
   }
 
+  updateEmployee(id: number) {
+    this.router.navigate(['update', id]);
+  }
 
 }
