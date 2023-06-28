@@ -9,6 +9,10 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateFilmComponent } from './create-film/create-film.component';
+import { FilmListComponentComponent } from './film-list-component/film-list-component.component';
+import { UpdatefilmComponent } from './updatefilm/updatefilm.component';
+import { FilmdetailsComponent } from './filmdetails/filmdetails.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { HttpClientModule } from '@angular/common/http';
     EmployeeListComponent,
     CreateEmployeeComponent,
     EmployeeDetailsComponent,
-    UpdateEmployeeComponent
+    UpdateEmployeeComponent,
+    CreateFilmComponent,
+    FilmListComponentComponent,
+    UpdatefilmComponent,
+    FilmdetailsComponent
   ],
   imports: [
     BrowserModule,

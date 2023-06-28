@@ -1,0 +1,15 @@
+<h2>Film Details</h2> 
+
+<hr/>
+<div *ngIf="film">
+  <div>
+    <label><b>Film Title: </b></label> {{film.title}}
+  </div>
+  <div>
+    <label><b>Film description: </b></label> {{film.description}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Film List</button><br>

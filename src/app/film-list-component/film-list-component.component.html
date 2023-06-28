@@ -1,0 +1,26 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Film List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let film of films | async">
+            <td>{{film.title}}</td>
+            <td>{{film.description}}</td>
+            <td><button (click)="deleteFilm(film.id!)" class="btn btn-danger">Delete Film</button>
+                <button (click)="filmDetails(film.id!)" class="btn btn-info" style="margin-left: 10px">Film Details</button>
+                <button (click)="updatefilm(film.id!)" class="btn btn-info" style="margin-left: 10px">Update Film</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
